@@ -40,7 +40,7 @@
                 <div class="col-12">
                     <div class="col-10">
                       <?php  
-                      include("include/modal_frm_reg_productos.php");
+                      include("modal/modal_frm_reg_productos.php");
                       ?>
 
                    
