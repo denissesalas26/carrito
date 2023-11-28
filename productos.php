@@ -1,7 +1,7 @@
-<?php
-    require('conexion.php');
-    
-    ?>
+    <?php
+        require('conexion.php');
+        
+        ?>
 <!DOCTYPE html>
 <html lang="en">
 
