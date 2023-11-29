@@ -21,51 +21,32 @@
                           
 
                         <div class="form-group row">
-                            <label class="col-lg-2 col-md-2 col-sm-12" for="">Servidor Correo</label>
-                            <input type="email"class="form-control ol-lg-10 col-md-10 col-sm-12"  name="a_n"placeholder=" "required>
+                            <label class="col-lg-2 col-md-2 col-sm-12" for="">serie_venta</label>
+                            <input type="number"class="form-control ol-lg-10 col-md-10 col-sm-12"  name="a_n"placeholder=" "required>
 
                             </div>
 
 
                                   <div class="form-group row">
-                            <label class="col-lg-2 col-md-2 col-sm-12" for="">Usuario Correo</label>
-                            <input type="email"class="form-control ol-lg-10 col-md-10 col-sm-12"  name="a_n"required>
+                            <label class="col-lg-2 col-md-2 col-sm-12" for="">numero_venta</label>
+                            <input type="number"class="form-control ol-lg-10 col-md-10 col-sm-12"  name="a_n"required>
 
                             </div>
 
 
                                   <div class="form-group row">
-                            <label class="col-lg-2 col-md-2 col-sm-12" for="">Contraseña Correo</label>
-                            <input type="email"class="form-control ol-lg-10 col-md-10 col-sm-12"  name="a_n"placeholder="  "required>
+                            <label class="col-lg-2 col-md-2 col-sm-12" for="">fecha_hora_venta</label>
+                            <input type="date"class="form-control ol-lg-10 col-md-10 col-sm-12"  name="a_n"placeholder="  "required>
 
                             </div>
 
 
 
                             <div class="form-group row">
-                            <label class="col-lg-2 col-md-2 col-sm-12" for="">Puerto Correo</label>
-                            <input type="email"class="form-control ol-lg-10 col-md-10 col-sm-12"  name="a_n"placeholder=" "required>
+                            <label class="col-lg-2 col-md-2 col-sm-12" for="">monto_total</label>
+                            <input type="number"class="form-control ol-lg-10 col-md-10 col-sm-12"  name="a_n"placeholder=" "required>
 
                             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

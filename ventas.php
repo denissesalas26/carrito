@@ -28,6 +28,8 @@ require('conexion.php');
 <body>
     <?php
     require('include/header.php');
+
+    
     ?>
 
     <!---INICIO DE CONTENIDO--->
