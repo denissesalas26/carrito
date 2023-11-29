@@ -3,7 +3,7 @@
  
  
  <!-- Large modal -->
- <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal" data-target=".registrar_pedidos">+Nuevo</button>
+ <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal" data-target=".registrar_pedidos">+ Nuevo pedidos</button>
 
 <div class="modal fade registrar_pedidos" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-lg">
@@ -15,7 +15,7 @@
                                                     </button>
                                                 </div>
                                                 <div class="modal-body">
-                                                <form action="registrar_usuarios.php" method="post" enctype="multipart/form-data">
+                                               <!--- <form action="registrar_usuarios.php" method="post" enctype="multipart/form-data">
                             <div class="form-group row ">
                                 <label class="col-lg-2 col-md-2 col-sm-12" for="">DNI:</label>
                                 <input type="number"class="form-control col-lg-4 col-md-4 col-sm-12"  name="dni" autocomplete="off"placeholder="Ingrese su Dni " required >
@@ -65,39 +65,11 @@
                                 <input type="file"class="form-control col-lg-4 col-md-4 col-sm-12" accept="image/*"  name="img"placeholder="Ingrese su Fecha de Nacimiento "required>
 
                             </div>
-
-                            <div class="form-group row ">
-                                <label class="col-lg-2 col-md-2 col-sm-12" for="">Rol</label>
-                                
-                             <select name="rol" class="form-control col-lg-4 col-md-4 col-sm-12" id="" type="file">
-                           <optio value=""></optio>
-                             <?php
-                             $consulta_rol="SELECT*FROM roles";
-                             $ejecutar= mysqli_query($conn, $consulta_rol);
-                             while($datos_roles=mysqli_fetch_array($ejecutar)){?>
+-->
+                            
                             
 
-
-                              <option value="<?php echo  $datos_roles['id'];?>"><?php  echo $datos_roles['nombre'];?></option>
-                          
-                             
-                             
                             
-                             <?php }?>
-                            
-                             </select>
-                            </div>
-
-
-
-                            
-
-                            <div class="form-group row ">
-                                <label class="col-lg-2 col-md-2 col-sm-12" for=""></label>
-                                <button type="submit" class="btn btn-primary ">Registrar</button>
-
-                            </div>
-
                       
                       
 

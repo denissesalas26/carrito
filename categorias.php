@@ -8,11 +8,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito</title>
+    <title>Carrito de Compras</title>
     <link href="plantilla/Admin/vertical/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="plantilla/Admin/vertical/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="plantilla/Admin/vertical/assets/css/theme.min.css" rel="stylesheet" type="text/css" />
-  
+
+
+<!-- Plugins css -->
+    <link href="plantilla/Admin/plugins/datatables/dataTables.bootstrap4.css" rel="stylesheet" type="text/css" />
+    <link href="plantilla/Admin/plugins/datatables/responsive.bootstrap4.css" rel="stylesheet" type="text/css" />
+    <link href="plantilla/Admin/plugins/datatables/buttons.bootstrap4.css" rel="stylesheet" type="text/css" />
+    <link href="plantilla/Admin/plugins/datatables/select.bootstrap4.css" rel="stylesheet" type="text/css" />
+    
+
+    
+   
 </head>
 
 <body>
@@ -29,22 +39,81 @@
             <div class="row">
                 <div class="col-12">
                     <div class="col-10">
-                    <?php  
+                      <?php  
                       include("modal/modal_frm_reg_categorias.php");
                       ?>
-                  <!---  <h4>Registrar Categorias</h4>--->
+
+                   
+                   <!---- <h4>Registrar Usuarios</h4>--->
                     </div>
                     <!---
-                    <div class="card ">
+                    <div class="card">
                         <div class="card-body">
 
-                        <form action="registrar_categorias.php" method="post">
+                        <form action="registrar_usuarios.php" method="post" enctype="multipart/form-data">
                             <div class="form-group row ">
-                                <label class="col-lg-2 col-md-2 col-sm-12" for="">Nombre de la Categoria:</label>
-                                <input type="text"class="form-control col-lg-4 col-md-4 col-sm-12"  name="categoria" autocomplete="off"placeholder="Nombre de la categoria  " required >
+                                <label class="col-lg-2 col-md-2 col-sm-12" for="">DNI:</label>
+                                <input type="number"class="form-control col-lg-4 col-md-4 col-sm-12"  name="dni" autocomplete="off"placeholder="Ingrese su Dni " required >
 
                             </div>
 
+
+
+                            <div class="form-group row">
+                            <label class="col-lg-2 col-md-2 col-sm-12" for="">Apellidos y Nombres</label>
+                            <input type="text"class="form-control ol-lg-10 col-md-10 col-sm-12"  name="a_n"placeholder="Ingrese su apellido y su nombre  "required>
+
+                            </div>
+
+                            <div class="form-group row ">
+                                <label class="col-lg-2 col-md-2 col-sm-12" for="">Correo:</label>
+                                <input type="email"class="form-control col-lg-10 col-md-10 col-sm-12"  name="correo"placeholder="Ingrese su Correo"required>
+
+                            </div>
+
+
+                            <div class="form-group row ">
+                                <label class="col-lg-2 col-md-2 col-sm-12" for="">Telefono :</label>
+                                <input type="number"class="form-control col-lg-4 col-md-4 col-sm-12"  name="telefono"placeholder="Ingrese su Telefono "required>
+
+                            </div>
+
+
+
+
+                            <div class="form-group row ">
+                                <label class="col-lg-2 col-md-2 col-sm-12" for="">Direccion:</label>
+                                <input type="text"class="form-control ol-lg-10 col-md-10 col-sm-12"  name="direccion"placeholder="Ingrese su Direccion"required>
+
+                            </div>
+
+
+
+
+                            <div class="form-group row ">
+                                <label class="col-lg-2 col-md-2 col-sm-12" for="">Fecha de Nacimiento:</label>
+                                <input type="date"class="form-control col-lg-4 col-md-4 col-sm-12"  name="nacimiento"placeholder="Ingrese su Fecha de Nacimiento "required>
+
+                            </div>
+                            <div class="form-group row ">
+                                <label class="col-lg-2 col-md-2 col-sm-12" for="">Foto</label>
+                                <input type="file"class="form-control col-lg-4 col-md-4 col-sm-12" accept="image/*"  name="img"placeholder="Ingrese su Fecha de Nacimiento "required>
+
+                            </div>
+
+                            <div class="form-group row ">
+                                <label class="col-lg-2 col-md-2 col-sm-12" for="">Rol</label>
+                                
+                             <select name="rol" class="form-control col-lg-4 col-md-4 col-sm-12" id="" type="file">
+                           <optio value=""></optio>
+                             
+                            
+                             </select>
+                            </div>
+
+
+
+                            
 
                             <div class="form-group row ">
                                 <label class="col-lg-2 col-md-2 col-sm-12" for=""></label>
@@ -57,12 +126,11 @@
 
 
                         </form>
+                  
                         </div>
                         
                     </div>
-
--->
-
+                    ---->
 
 
 
@@ -78,122 +146,68 @@
                         
 
 
+                        
+                       
+    
+<?php
+
+require('conexion.php');
+
+
+?>
 
 
 
 
-                        <!-- Modal -->
-<div class="modal fade" id="modaleditar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">editar datos del Usuario</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-
-
-        <form action="" method="post">
-
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Dni</label>
-            <input type="number" name="dni"class="form-control" id="exampleInputEmail1" value=""aria-describedby="emailHelp">
-           
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Apellidos_Nombres</label>
-            <input type="text" name="a_n"class="form-control" id="exampleInputEmail1" value=""aria-describedby="emailHelp">
-           
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">correo</label>
-            <input type="email"  name="correo"class="form-control" value=""id="exampleInputPassword1">
-          </div>
-          
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">telefono</label>
-            <input type="number"  name="telefono"class="form-control" value=""id="exampleInputPassword1">
-          </div>
-
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Direccion</label>
-            <input type="text"  name="direccion"class="form-control" value=""id="exampleInputPassword1">
-          </div>
-
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Fecha_Nacimiento</label>
-            <input type="date"  name="nacimiento"class="form-control" value=""id="exampleInputPassword1">
-          </div>
-          
-          <button type="submit" class="btn btn-primary">editar</button>
-        </form>
-
-
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Save </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-<br>
-                        <br>
-                        <br>
-                        <table class="table table-bordered"id="userstable">
+<table id="basic-datatable" class="table dt-responsive nowrap">
   <thead>
     <tr>
-      <th scope="col">Id</th>
-      <th scope="col">Nombre</th>
+     <th scope="col">#</th>
+      <th scope="col">id</th>
+      <th scope="col"><Datag>Nombre</Datag></th>
       
+      <th scope="col">Accion</th>
     </tr>
   
 
   </thead>
   <tbody>
+  <?php
+$consulta="select *from categoria ";
+$ejecutar=mysqli_query($conn,$consulta);
+$cont=0;
 
-
-    <?php
-    $sql=$conn->query("Select*from categoria");
-    while($raul=$sql->fetch_object()){?>
-<tr>
-      <th scope="row"><?=$raul->id ?></th>
-      <td><?=$raul->nombre ?></td>
-      
-    <td>
-    
-        <a href="actualizar.php" type="button" data-bs-toggle="modal" data-bs-target="#modaleditar" class="btn btn-success"><i class="fa-solid- fa-pen-to-square">Editar</i></a>
-        <a href="eliminar_usuarios.php" type="button" class="btn btn-danger"><i class="fa-solid- fa-pen-to-square">Eliminar</i></a>
-       
-      </td>
-    </tr>
-
-
-   <?php }
-
-
-
-    ?>
-
+while($respuesta=mysqli_fetch_array($ejecutar)){
+    $cont++;
    
+echo"<tr>";
+echo"<td>".$cont."</td>";
+echo"<td>".$respuesta['id']."</td>";
+echo"<td>".$respuesta['nombre']."</td>";
+
+
+echo"<td><button class='btn btn-primary'>Editar</button><button class='btn btn-danger'>Eliminar</button></td>";
+
+
+
+
+
+echo"</tr>";
+
+
+    
+
+}
+
+
+
+?>
   </tbody>
 </table>
-<!-- table -->
-
 
 
 
 <!-- table -->
-
-
-
                         </div>
                         
                     </div>
@@ -237,6 +251,46 @@
     <script src="plantilla/Admin/vertical/assets/js/waves.js"></script>
     <script src="plantilla/Admin/vertical/assets/js/simplebar.min.js"></script>
 
+    <!-- App js -->
+    <script src="plantilla/Admin/vertical/assets/js/theme.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery  -->
+    <script src="plantilla/Admin/assets/js/jquery.min.js"></script>
+    <script src="plantilla/Admin/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="plantilla/Admin/assets/js/metismenu.min.js"></script>
+    <script src="plantilla/Admin/assets/js/waves.js"></script>
+    <script src="plantilla/Admin/assets/js/simplebar.min.js"></script>
+
+    <!-- third party js -->
+    <script src="plantilla/Admin/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="plantilla/Admin/plugins/datatables/dataTables.bootstrap4.js"></script>
+    <script src="plantilla/Admin/plugins/datatables/dataTables.responsive.min.js"></script>
+    <script src="plantilla/Admin/plugins/datatables/responsive.bootstrap4.min.js"></script>
+    <script src="plantilla/Admin/plugins/datatables/dataTables.buttons.min.js"></script>
+    <script src="plantilla/Admin/plugins/datatables/buttons.bootstrap4.min.js"></script>
+    <script src="plantilla/Admin/plugins/datatables/buttons.html5.min.js"></script>
+    <script src="plantilla/Admin/plugins/datatables/buttons.flash.min.js"></script>
+    <script src="plantilla/Admin/plugins/datatables/buttons.print.min.js"></script>
+    <script src="plantilla/Admin/plugins/datatables/dataTables.keyTable.min.js"></script>
+    <script src="plantilla/Admin/plugins/datatables/dataTables.select.min.js"></script>
+    <script src="plantilla/Admin/plugins/datatables/pdfmake.min.js"></script>
+    <script src="plantilla/Admin/plugins/datatables/vfs_fonts.js"></script>
+    <!-- third party js ends -->
+
+    <!-- Datatables init -->
+    <script src="plantilla/Admin/vertical/assets/pages/datatables-demo.js"></script>
+    
     <!-- App js -->
     <script src="plantilla/Admin/vertical/assets/js/theme.js"></script>
 

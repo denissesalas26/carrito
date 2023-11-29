@@ -49,35 +49,11 @@
                         
                     </div>
 
-
-
-
-
-
-
-
-
                     <?php  
                       include("modal/modal_frm_reg_ventas.php");
                       ?>
                     <div class="card">
                         <div class="card-body">
-
-                        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                         
                         <br>

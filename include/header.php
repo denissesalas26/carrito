@@ -84,9 +84,7 @@
                     <li>
                         <a href="index.php" class="waves-effect"><i class="feather-users"></i>Usuarios</a>
                     </li>
-                    <li>
-                        <a href="sistema.php" class="waves-effect"><i class="feather-monitor"></i>Sistema</a>
-                    </li>
+
 
                     <li>
                         <a href="productos.php" class="waves-effect"><i class="dripicons-cart"></i>Productos</a>
@@ -108,13 +106,14 @@
                     <li>
                         <a href="pedidos.php" class="waves-effect"><i class="feather-truck"></i>Pedidos</a>
                     </li>
+                    <!---
                     <li>
                         <a href="" class="waves-effect"><i class="dripicons-gear"></i>Devoluciones</a>
                     </li>
-                   
 
 
-                    <!---
+
+                
                     <li>
                         <a href="javascript: void(0);" class="has-arrow waves-effect"><i
                                     class="dripicons-gear ext-white"></i><span class="text-white">Empresa</span></a>
@@ -128,15 +127,16 @@
 --->
 
 
-
+<!----
                     <li>
                         <a href="reportes.php" class="waves-effect"><i class="dripicons-graph-line"></i>Reportes</a>
                     </li>
+                    
                     <li>
                         <a href="proveedor.php" class="waves-effect"><i class="fas fa-users"></i>Proveedores</a>
                     </li>
 
-
+---->
                     
 
 <!---
