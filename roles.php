@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,12 @@
     <link href="plantilla/Admin/vertical/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="plantilla/Admin/vertical/assets/css/theme.min.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-<?php
+    <?php
     require('include/header.php');
     ?>
-     
+
 
     <!-- INICIO DE CONTENIDO -->
     <div class="main-content">
@@ -20,9 +22,9 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                    <?php  
-                      include("modal/modal_frm_reg_roles.php");
-                      ?>
+                        <?php
+                        include("modal/modal_frm_reg_roles.php");
+                        ?>
                         <h4>Registrar Roles</h4>
                         <!---
                         <div class="card">
@@ -45,7 +47,7 @@
             </div>
         </div>
     </div>
-     <!-- FIN DE CONTENIDO -->
+    <!-- FIN DE CONTENIDO -->
 
 
     <!-- jQuery  -->
