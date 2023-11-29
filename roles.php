@@ -1,3 +1,8 @@
+<?php 
+    // Lenguaje en php
+    include("include/conexion.php");
+
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
