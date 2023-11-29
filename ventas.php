@@ -66,6 +66,7 @@ include("include/conexion.php");
                                             }
 
                                         ?>
+                                        
                                     </tbody>
                                     </table>
                        
