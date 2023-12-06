@@ -40,23 +40,23 @@ include("include/conexion.php");
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
                                         <form action="">
                                             <div class="form-group row">
                                                 <label class="col-lg-2 col-md-2 col-sm-6">DNI:</label>
-                                                <input type="number" name="dni" class="form-control col-lg-2 col-md-2 sm-6" required placeholder="dni cliente">
-                                                <button class="btn btn-info col-lg-2 col-md-2 col-sm-4">buscar</button>
+                                                <input type="number" name="dni" class="form-control col-lg-4 col-md-4 sm-12" required placeholder="dni cliente">
+                                                <button class="btn btn-primary col-lg-2 col-md-2 col-sm-4">buscar</button>
                                             </div>
 
 
                                             <div class="form group row">
                                                 <label class="col-lg-2 col-md-2 col-sm-6 ">Apellidos y Nombres:</label>
-                                                <input type="text" id="nombres" class="form-control col-lg-4 col-md-8 col-sm-12">
+                                                <input type="text" id="nombres" class="form-control col-lg-4 col-md-4 col-sm-12">
                                             </div>
                                             <br>
                                             <div class="form group row">
                                                 <label class="col-lg-2 col-md-2 col-sm-6">Usuario:</label>
-                                                <select name="usuario" id="usuario" class="form-control col-lg-2 col-md-2 col-sm-6">
+                                                <select name="usuario" id="usuario" class="form-control col-lg-4 col-md-4 col-sm-12">
                                                     <option value="1">Usuario 1</option>
                                                     <option value="1">Usuario 2</option>
                                                     <option value="1">Usuario 3</option>
@@ -64,15 +64,15 @@ include("include/conexion.php");
                                             </div>
                                             <br>
                                             <div class="form-group row">
-                                                <label class="col-lg-4 col-md-4 col-sm-12">Producto:</label>
+                                                <label class="col-lg-2 col-md-2 col-sm-12">Producto:</label>
                                                 <input type="number" name="dni" class="form-control col-lg-4 col-md-4 sm-12" required placeholder="código producto">
-                                                <button class="btn btn-info col-lg-2 col-md-2 col-sm-4  ">buscar</button>
+                                                <button class="btn btn-primary col-lg-2 col-md-2 col-sm-4  ">buscar</button>
                                             </div>
 
                                             <br>
                                             <div class="form group row">
-                                                <label class="col-lg-4 col-md-4 col-sm-12 ">Fecha y Hora:</label>
-                                                <label for="" class="form-control col-lg-4 col-md-8 col-sm-12 ">
+                                                <label class="col-lg-2 col-md-2 col-sm-12 ">Fecha y Hora:</label>
+                                                <label for="" class="form-control col-lg-4 col-md-4 col-sm-12 ">
                                                     
                                                     <?php 
                                                      date_default_timezone_set("America/Lima");
@@ -84,12 +84,12 @@ include("include/conexion.php");
                                         </form>
 
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
                                         <table class="table table-bordered mb.0">
                                             <thead>
                                                 <tr> 
                                                     <tr>
-                                                    <th colspan="5" class="tex-center">Productos</th>
+                                                    <th colspan="6" class="text-center">Productos</th>
                                                     </tr>
                                                     <th width="5">Nro</th>
                                                     <th width="60">Descripcion</th>
@@ -105,7 +105,7 @@ include("include/conexion.php");
                                                     <td> <input type="number" value="2"></td>
                                                     <td>s/. 50.00</td>
                                                     <td>s/. 100</td>
-                                                    <td><button class="btn-btn-danger"></button></td>
+                                                    <td><button class="btn btn-danger"> X</button></td>
                                                 </tr>
                                                 <tr>
                                                     <td colspan="4" class="text-center">TOTAL</td>
